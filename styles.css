@@ -5,45 +5,45 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
+
+/* Zone container */
 .zone {
+  position: relative;        /* So we can place an overlay */
   text-align: center;
-  padding: 20px;
+  padding: 60px 20px;        /* Increased padding for breathing room */
   min-height: 33vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-size: 400% 400%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;          /* Hide overflow from overlay */
+}
+
+/* Dark overlay to help text stand out */
+.zone::before {
+  content: "";
+  position: absolute;
+  inset: 0;                  /* Covers the entire zone */
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: 0;                /* Stays behind the text content */
+}
+
+/* Ensure zone content sits above the overlay */
+.zone > * {
   position: relative;
-  transition: background 0.5s ease;
+  z-index: 1;
 }
 
-/* Gradient shift animation */
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* Section titles */
+.zone h2 {
+  margin-bottom: 1em;
+  font-size: 3rem;           /* Larger for visibility */
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
-#apocalypse {
-  background: url('images/apocalypsemarket.jpg') no-repeat center center;
-  background-size: cover;
-  /* Optional: adjust padding or other styles if needed */
-}
-#temu {
-  background: url('images/temu.jpg') no-repeat center center;
-  background-size: cover;
-}
-#generic {
-  background: url('images/weirdbox.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-h2 {
-  margin-bottom: 15px;
-  font-size: 2em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
+/* Player container */
 .players {
   display: flex;
   flex-wrap: wrap;
@@ -51,8 +51,11 @@ h2 {
   gap: 10px;
 }
 
+/* Player name tags */
 .player {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5); /* Dark, semi-transparent overlay */
+  color: #fff;
+  font-size: 1.2rem;
   margin: 5px;
   padding: 10px 15px;
   border-radius: 5px;
@@ -63,8 +66,9 @@ h2 {
   animation: fadeInUp 0.5s forwards;
 }
 
+/* Hover effect for name tags */
 .player:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0,0,0,0.7);
 }
 
@@ -77,5 +81,26 @@ h2 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .zone h2 {
+    font-size: 2rem;
+  }
+  .player {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .zone h2 {
+    font-size: 1.5rem;
+  }
+  .player {
+    font-size: 0.9rem;
+    padding: 6px 8px;
   }
 }
