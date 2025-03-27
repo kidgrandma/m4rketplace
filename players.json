@@ -1,0 +1,9 @@
+{
+  "players": [
+    { "name": "@player1", "bucket": "apocalypse" },
+    { "name": "@player2", "bucket": "temu" },
+    { "name": "@player3", "bucket": "generic" },
+    { "name": "@player4", "bucket": "apocalypse" },
+    { "name": "@player5", "bucket": "temu" }
+  ]
+}
