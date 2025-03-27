@@ -1,14 +1,4 @@
-// Dummy player data; replace with real-time data as needed.
-const players = [
-  { name: '@player1', bucket: 'apocalypse' },
-  { name: '@player2', bucket: 'temu' },
-  { name: '@player3', bucket: 'generic' },
-  { name: '@player4', bucket: 'apocalypse' },
-  { name: '@player5', bucket: 'temu' }
-];
-
-// Render players into their respective zones
-function renderPlayers() {
+function renderPlayers(players) {
   const zones = {
     apocalypse: document.getElementById('apocalypsePlayers'),
     temu: document.getElementById('temuPlayers'),
@@ -18,14 +8,29 @@ function renderPlayers() {
   // Clear previous content
   Object.values(zones).forEach(zone => zone.innerHTML = '');
 
+  // Append each player to their designated bucket
   players.forEach((player, index) => {
     const el = document.createElement('div');
     el.className = 'player';
     el.textContent = player.name;
-    // Stagger fade-in effect by delaying each player's animation slightly
+    // Stagger the fade-in animation
     el.style.animationDelay = (index * 0.1) + 's';
     zones[player.bucket].appendChild(el);
   });
 }
 
-renderPlayers();
+// Function to fetch the players.json file and update the board
+function fetchPlayers() {
+  fetch('players.json')
+    .then(response => response.json())
+    .then(data => {
+      renderPlayers(data.players);
+    })
+    .catch(error => console.error('Error fetching player data:', error));
+}
+
+// Initial fetch
+fetchPlayers();
+
+// Poll for updates every 10 seconds (adjust the interval as needed)
+setInterval(fetchPlayers, 10000);
