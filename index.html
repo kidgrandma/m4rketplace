@@ -4,81 +4,7 @@
   <meta charset="UTF-8">
   <title>M4rketplace Game</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #111;
-      color: #fff;
-      overflow-x: hidden;
-    }
-    .zone {
-      text-align: center;
-      padding: 20px;
-      min-height: 33vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-size: 400% 400%;
-      position: relative;
-      transition: background 0.5s ease;
-    }
-    /* Gradient shift animation */
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    #apocalypse {
-      background: linear-gradient(135deg, #2c3e50, #e74c3c, #c0392b);
-      animation: gradientShift 15s ease infinite;
-    }
-    #temu {
-      background: linear-gradient(135deg, #2980b9, #f1c40f, #e67e22);
-      animation: gradientShift 15s ease infinite;
-    }
-    #generic {
-      background: linear-gradient(135deg, #bdc3c7, #2c3e50);
-      animation: gradientShift 15s ease infinite;
-    }
-    h2 {
-      margin-bottom: 15px;
-      font-size: 2em;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .players {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-    .player {
-      background: rgba(0, 0, 0, 0.4);
-      margin: 5px;
-      padding: 10px 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      opacity: 0;
-      animation: fadeInUp 0.5s forwards;
-    }
-    .player:hover {
-      transform: scale(1.1);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.7);
-    }
-    /* Fade in animation for player elements */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="apocalypse" class="zone">
@@ -99,39 +25,6 @@
       <!-- Player handles will be rendered here -->
     </div>
   </div>
-
-  <script>
-    // Dummy player data; replace with real-time data as needed.
-    const players = [
-      { name: '@player1', bucket: 'apocalypse' },
-      { name: '@player2', bucket: 'temu' },
-      { name: '@player3', bucket: 'generic' },
-      { name: '@player4', bucket: 'apocalypse' },
-      { name: '@player5', bucket: 'temu' }
-    ];
-
-    // Render players into their respective zones
-    function renderPlayers() {
-      const zones = {
-        apocalypse: document.getElementById('apocalypsePlayers'),
-        temu: document.getElementById('temuPlayers'),
-        generic: document.getElementById('genericPlayers')
-      };
-
-      // Clear previous content
-      Object.values(zones).forEach(zone => zone.innerHTML = '');
-
-      players.forEach((player, index) => {
-        const el = document.createElement('div');
-        el.className = 'player';
-        el.textContent = player.name;
-        // Stagger fade-in effect by delaying each player's animation slightly
-        el.style.animationDelay = (index * 0.1) + 's';
-        zones[player.bucket].appendChild(el);
-      });
-    }
-
-    renderPlayers();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
