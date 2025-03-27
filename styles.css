@@ -30,12 +30,12 @@ body {
   /* Optional: adjust padding or other styles if needed */
 }
 #temu {
-  background: linear-gradient(135deg, #2980b9, #f1c40f, #e67e22);
-  animation: gradientShift 15s ease infinite;
+  background: url('images/temu.jpg') no-repeat center center;
+  background-size: cover;
 }
 #generic {
-  background: linear-gradient(135deg, #bdc3c7, #2c3e50);
-  animation: gradientShift 15s ease infinite;
+  background: url('images/weirdbox.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 h2 {
