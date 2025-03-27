@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M4rketplace Game</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    .zone {
+      text-align: center;
+      padding: 20px;
+      min-height: 33vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: background 0.5s ease;
+    }
+    #apocalypse {
+      background: linear-gradient(135deg, #2c3e50, #e74c3c);
+    }
+    #temu {
+      background: linear-gradient(135deg, #2980b9, #f1c40f);
+    }
+    #generic {
+      background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+    }
+    h2 {
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+    .players {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .player {
+      background: rgba(0, 0, 0, 0.3);
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .player:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="apocalypse" class="zone">
+    <h2>🧨 THE APOCALYPSE</h2>
+    <div class="players" id="apocalypsePlayers">
+      <!-- Player handles will be rendered here -->
+    </div>
+  </div>
+  <div id="temu" class="zone">
+    <h2>🛍️ TEMU STORE</h2>
+    <div class="players" id="temuPlayers">
+      <!-- Player handles will be rendered here -->
+    </div>
+  </div>
+  <div id="generic" class="zone">
+    <h2>📦 GENERIC BOX</h2>
+    <div class="players" id="genericPlayers">
+      <!-- Player handles will be rendered here -->
+    </div>
+  </div>
 
+  <script>
+    // Dummy player data; you'll later replace this with real-time data fetching.
+    const players = [
+      { name: '@player1', bucket: 'apocalypse' },
+      { name: '@player2', bucket: 'temu' },
+      { name: '@player3', bucket: 'generic' },
+      { name: '@player4', bucket: 'apocalypse' },
+      { name: '@player5', bucket: 'temu' }
+    ];
+
+    // Render players into the appropriate zone
+    function renderPlayers() {
+      const zones = {
+        apocalypse: document.getElementById('apocalypsePlayers'),
+        temu: document.getElementById('temuPlayers'),
+        generic: document.getElementById('genericPlayers')
+      };
+
+      // Clear previous content
+      Object.values(zones).forEach(zone => zone.innerHTML = '');
+
+      players.forEach(player => {
+        const el = document.createElement('div');
+        el.className = 'player';
+        el.textContent = player.name;
+        zones[player.bucket].appendChild(el);
+      });
+    }
+
+    renderPlayers();
+  </script>
+</body>
+</html>
