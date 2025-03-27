@@ -25,8 +25,9 @@ body {
 }
 
 #apocalypse {
-  background: linear-gradient(135deg, #2c3e50, #e74c3c, #c0392b);
-  animation: gradientShift 15s ease infinite;
+  background: url('images/apocalypsemarket.jpg') no-repeat center center;
+  background-size: cover;
+  /* Optional: adjust padding or other styles if needed */
 }
 #temu {
   background: linear-gradient(135deg, #2980b9, #f1c40f, #e67e22);
