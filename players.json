@@ -6,9 +6,9 @@
     { "name": "@chelsea_lelito", "bucket": "apocalypse", "team": "resident" },
     { "name": "@littleurbanachiever", "bucket": "apocalypse", "team": "resident" },
     { "name": "@downtown.dave", "bucket": "apocalypse", "team": "resident" },
-    { "name": "@dresden____", "bucket": "apocalypse", "team": "resident" },
+    { "name": "@dresden____", "bucket": "apocalypse", "team": "resident", "shield": true },
     { "name": "@gianennio", "bucket": "generic", "team": "resident" },
-    { "name": "@octavekitten", "bucket": "apocalypse", "team": "resident" },
+    { "name": "@octavekitten", "bucket": "apocalypse", "team": "resident", "shield": true },
     { "name": "@harpdigitalmedia", "bucket": "apocalypse", "team": "resident" },
     { "name": "@getyohairdid", "bucket": "apocalypse", "team": "resident" },
     { "name": "@kunaalarya", "bucket": "apocalypse", "team": "resident" },
@@ -20,8 +20,8 @@
     { "name": "@manolowashere", "bucket": "apocalypse", "team": "resident" },
     { "name": "@stevenbloodbath", "bucket": "apocalypse", "team": "resident" },
     { "name": "@theemikebdj", "bucket": "apocalypse", "team": "resident" },
-    { "name": "@mokibaby", "bucket": "apocalypse", "team": "resident" },
-    { "name": "@taystaystayt", "bucket": "apocalypse", "team": "resident" },
+    { "name": "@mokibaby", "bucket": "apocalypse", "team": "resident", "shield": true },
+    { "name": "@taystaystayt", "bucket": "apocalypse", "team": "resident", "shield": true },
     { "name": "@_marcusfrye", "bucket": "temu", "team": "tourist" },
     { "name": "@thecarolinerice", "bucket": "temu", "team": "tourist" },
     { "name": "@copyrightcollin", "bucket": "temu", "team": "tourist" },
@@ -41,7 +41,7 @@
     { "name": "@creativevice", "bucket": "temu", "team": "tourist" },
     { "name": "@theprofound_solo", "bucket": "generic", "team": "tourist" },
     { "name": "@sjimenez05", "bucket": "temu", "team": "tourist" },
-    { "name": "@kemeyuh", "bucket": "apocalypse", "team": "tourist" },
+    { "name": "@kemeyuh", "bucket": "apocalypse", "team": "tourist", "shield": true },
     { "name": "@lielacsky", "bucket": "temu", "team": "tourist" }
   ]
 }
