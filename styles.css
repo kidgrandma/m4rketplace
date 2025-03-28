@@ -81,14 +81,14 @@ body {
 .player.resident {
   border-left: 5px solid #39FF14; /* Neon green accent */
   color: #39FF14;
-  text-shadow: 0 0 8px #39FF14, 0 0 16px #39FF14;
+  text-shadow: 0 0 4px #39FF14, 0 0 8px #39FF14;
 }
 
 /* Cyber Neon Aesthetic for TOURIST */
 .player.tourist {
   border-left: 5px solid #FF00FF; /* Neon magenta accent */
   color: #FF00FF;
-  text-shadow: 0 0 8px #FF00FF, 0 0 16px #FF00FF;
+  text-shadow: 0 0 4px #FF00FF, 0 0 8px #FF00FF;
 }
 
 /* Fade in animation for player elements */
