@@ -1,10 +1,11 @@
 // Function to render players into their respective zones
 function renderPlayers(players) {
-  const zones = {
-    apocalypse: document.getElementById('apocalypsePlayers'),
-    temu: document.getElementById('temuPlayers'),
-    generic: document.getElementById('genericPlayers')
-  };
+const zones = {
+  apocalypse: document.getElementById('apocalypsePlayers'),
+  temu: document.getElementById('temuPlayers'),
+  generic: document.getElementById('genericPlayers'),
+  g0d: document.getElementById('g0dPlayers')
+};
 
   // Clear previous content
   Object.values(zones).forEach(zone => zone.innerHTML = '');
