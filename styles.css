@@ -19,7 +19,21 @@ body {
   background-position: center;
   overflow: hidden;          /* Hide overflow from overlay */
 }
+#apocalypse {
+  background-image: url('images/apocalypsemarket.jpg');
+}
 
+#temu {
+  background-image: url('images/temu.jpg');
+}
+
+#generic {
+  background-image: url('images/weirdbox.jpg');
+/* Ensure zone content sits above the overlay */
+.zone > * {
+  position: relative;
+  z-index: 1;
+}
 /* Dark overlay to help text stand out */
 .zone::before {
   content: "";
@@ -27,12 +41,6 @@ body {
   inset: 0;                  /* Covers the entire zone */
   background: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
   z-index: 0;                /* Stays behind the text content */
-}
-
-/* Ensure zone content sits above the overlay */
-.zone > * {
-  position: relative;
-  z-index: 1;
 }
 
 /* Section titles */
