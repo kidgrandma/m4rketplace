@@ -14,9 +14,9 @@ function renderPlayers(players) {
     el.className = 'player';
     el.textContent = player.name;
     // Add a team-specific class if team info is provided
-    if (player.team) {
-      el.classList.add('team-' + player.team);
-    }
+  if (player.team) {
+    el.classList.add(player.team);
+  }
     // Stagger the fade-in animation
     el.style.animationDelay = (index * 0.1) + 's';
     zones[player.bucket].appendChild(el);
