@@ -19,7 +19,9 @@ body {
   background-position: center;
   overflow: hidden;          /* Hide overflow from overlay */
 }
-
+#g0d {
+  background-image: url('images/heaven.jpg');
+}
 #apocalypse {
   background-image: url('images/apocalypsemarket.jpg');
 }
@@ -30,7 +32,7 @@ body {
 
 #generic {
   background-image: url('images/weirdbox.jpg');
-} /* <-- Closing brace added here */
+} 
 
 /* Ensure zone content sits above the overlay */
 .zone > * {
