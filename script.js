@@ -17,6 +17,10 @@ function renderPlayers(players) {
   if (player.team) {
     el.classList.add(player.team);
   }
+      if (player.shield) {
+    el.classList.add('shield');
+  }
+
     // Stagger the fade-in animation
     el.style.animationDelay = (index * 0.1) + 's';
     zones[player.bucket].appendChild(el);
