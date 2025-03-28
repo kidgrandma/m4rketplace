@@ -79,27 +79,25 @@ body {
   animation: fadeInUp 0.5s forwards;
 }
 
-/* Existing team styles for resident and tourist remain */
-
-/* Cyber Neon Aesthetic for RESIDENT */
+/* Cyber Neon Aesthetic for RESIDENT with reduced glow */
 .player.resident {
   border-left: 5px solid #39FF14; /* Neon green accent */
   color: #39FF14;
-  text-shadow: 0 0 4px #39FF14, 0 0 8px #39FF14;
+  text-shadow: 0 0 2px #39FF14, 0 0 4px #39FF14;
 }
 
-/* Cyber Neon Aesthetic for TOURIST */
+/* Cyber Neon Aesthetic for TOURIST with reduced glow */
 .player.tourist {
   border-left: 5px solid #FF00FF; /* Neon magenta accent */
   color: #FF00FF;
-  text-shadow: 0 0 4px #FF00FF, 0 0 8px #FF00FF;
+  text-shadow: 0 0 2px #FF00FF, 0 0 4px #FF00FF;
 }
 
-/* Shield styling: bright yellow overrides other styles */
+/* Shield styling with reduced glow for bright yellow */
 .player.shield {
   border-left: 5px solid #FFFF00 !important;  /* Bright yellow border */
   color: #FFFF00 !important;                   /* Bright yellow text */
-  text-shadow: 0 0 4px #FFFF00, 0 0 8px #FFFF00 !important;  /* Neon glow */
+  text-shadow: 0 0 2px #FFFF00, 0 0 4px #FFFF00 !important;  /* Reduced glow */
 }
 
 /* Fade in animation for player elements */
