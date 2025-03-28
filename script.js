@@ -1,3 +1,4 @@
+// Function to render players into their respective zones
 function renderPlayers(players) {
   const zones = {
     apocalypse: document.getElementById('apocalypsePlayers'),
@@ -8,11 +9,14 @@ function renderPlayers(players) {
   // Clear previous content
   Object.values(zones).forEach(zone => zone.innerHTML = '');
 
-  // Append each player to their designated bucket
   players.forEach((player, index) => {
     const el = document.createElement('div');
     el.className = 'player';
     el.textContent = player.name;
+    // Add a team-specific class if team info is provided
+    if (player.team) {
+      el.classList.add('team-' + player.team);
+    }
     // Stagger the fade-in animation
     el.style.animationDelay = (index * 0.1) + 's';
     zones[player.bucket].appendChild(el);
@@ -32,5 +36,5 @@ function fetchPlayers() {
 // Initial fetch
 fetchPlayers();
 
-// Poll for updates every 10 seconds (adjust the interval as needed)
+// Poll for updates every 10 seconds
 setInterval(fetchPlayers, 10000);
