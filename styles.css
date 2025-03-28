@@ -63,7 +63,6 @@ body {
   gap: 10px;
 }
 
-/* Base player styling remains the same */
 /* Base player styling remains unchanged */
 .player {
   background: rgba(0, 0, 0, 0.65); /* Semi-transparent dark background */
@@ -94,11 +93,11 @@ body {
   text-shadow: 0 0 4px #FF00FF, 0 0 8px #FF00FF;
 }
 
-/* Shield styling: bright yellow to indicate shielded players */
+/* Shield styling: bright yellow overrides other styles */
 .player.shield {
-  border-left: 5px solid #FFFF00; /* Bright yellow accent */
-  color: #FFFF00;
-  text-shadow: 0 0 4px #FFFF00, 0 0 8px #FFFF00;
+  border-left: 5px solid #FFFF00 !important;  /* Bright yellow border */
+  color: #FFFF00 !important;                   /* Bright yellow text */
+  text-shadow: 0 0 4px #FFFF00, 0 0 8px #FFFF00 !important;  /* Neon glow */
 }
 
 /* Fade in animation for player elements */
