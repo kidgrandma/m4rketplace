@@ -1,12 +1,12 @@
 {
   "players": [
-    { "name": "@minervoussystem 🪩", "bucket": "g0d", "team": "resident","shield": true },
+    { "name": "@minervoussystem 🪩", "bucket": "g0d", "team": "resident"},
     { "name": "@fatti_smith", "bucket": "apocalypse", "team": "resident" },
     { "name": "@andreamhwang🦝", "bucket": "apocalypse", "team": "resident" },
     { "name": "@chelsea_lelito 🫃🏼", "bucket": "g0d", "team": "resident" },
-    { "name": "@littleurbanachiever 🖕🏽", "bucket": "apocalypse", "team": "resident","shield": true },
+    { "name": "@littleurbanachiever 🖕🏽", "bucket": "apocalypse", "team": "resident"},
     { "name": "@downtown.dave 🖕🏽 ", "bucket": "apocalypse", "team": "resident" },
-    { "name": "@dresden__________ 👽", "bucket": "apocalypse", "team": "resident","shield": true },
+    { "name": "@dresden__________ 👽", "bucket": "apocalypse", "team": "resident" },
     { "name": "@gianennio 👽", "bucket": "apocalypse", "team": "resident" },
     { "name": "@octavekitten 🎠", "bucket": "g0d", "team": "resident" },
     { "name": "@harpdigitalmedia 🦝", "bucket": "apocalypse", "team": "resident" },
@@ -17,10 +17,10 @@
     { "name": "@mfgarrett 🫨", "bucket": "apocalypse", "team": "resident" },
     { "name": "@nataliesomekh_ 🫨", "bucket": "apocalypse", "team": "resident" },
     { "name": "@plascu 🏊🏻", "bucket": "apocalypse", "team": "resident" },
-    { "name": "@manolowashere 🪩", "bucket": "apocalypse", "team": "resident","shield": true },
+    { "name": "@manolowashere 🪩", "bucket": "apocalypse", "team": "resident" },
     { "name": "@stevenbloodbath 🏊🏻", "bucket": "apocalypse", "team": "resident" },
     { "name": "@theemikebdj", "bucket": "apocalypse", "team": "resident" },
-    { "name": "@mokibaby 🎠", "bucket": "g0d", "team": "resident", "shield": true },
+    { "name": "@mokibaby 🎠", "bucket": "g0d", "team": "resident", },
     { "name": "@taystaystayt 🥊", "bucket": "g0d", "team": "resident" },
     { "name": "@_marcusfrye 🦗", "bucket": "apocalypse", "team": "tourist" },
     { "name": " 📦 <3 🦝" , "bucket": "apocalypse", "team": "resident" },
@@ -31,10 +31,10 @@
     { "name": "@kimiajanesar 💃", "bucket": "apocalypse", "team": "tourist" },
     { "name": "@missmallorylovings 🍤", "bucket": "apocalypse", "team": "tourist" },
     { "name": "@maui_lives 💦", "bucket": "apocalypse", "team": "tourist" },
-    { "name": "@randeecw_ 🧞‍♀️", "bucket": "apocalypse", "team": "tourist","shield": true },
+    { "name": "@randeecw_ 🧞‍♀️", "bucket": "apocalypse", "team": "tourist"},
     { "name": "@theprofound_solo SPACE", "bucket": "apocalypse", "team": "tourist" },
     { "name": "@sjimenez05 💦", "bucket": "apocalypse", "team": "tourist" },
-    { "name": "@kemeyuh 🧞‍♀️", "bucket": "apocalypse", "team": "tourist", "shield": true},
+    { "name": "@kemeyuh 🧞‍♀️", "bucket": "apocalypse", "team": "tourist"},
     { "name": "@lielacsky 🍤", "bucket": "apocalypse", "team": "tourist" }
   ]
 }
